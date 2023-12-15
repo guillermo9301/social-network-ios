@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct examen_finalApp: App {
+    @State var mockUser = NewsFeedManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(filteredUser: mockUser.filterUserList)
         }
     }
 }
