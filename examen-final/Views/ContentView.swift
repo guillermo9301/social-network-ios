@@ -15,10 +15,10 @@ struct ContentView: View {
     
         var body: some View {
         
-        VStack {
+            VStack {
             HeaderView()
-            ScrollView (.horizontal){
-                HStack {
+                ScrollView (.horizontal, showsIndicators: false){
+                    HStack (spacing: 20){
                     ForEach(manager.userInfo.indices, id:\.self) { index in
                         Button(action: {
                             filteredUser = manager.filterUser(id: manager.userInfo[index].id)
@@ -28,7 +28,7 @@ struct ContentView: View {
                             StoriesView(user: $manager.userInfo[index])
                         })
                     }
-                }
+                }.padding(8)
             }
             NewsFeedView(user: $filteredUser)
             Spacer()

@@ -19,7 +19,7 @@ struct StoriesView: View {
             URLImage(URL(string: user.userPhoto)!) { image in
                 image.storyThumbnail()
             }
-            Text("\(user.name) \(user.lastname)").storyUserName()
+            Text("\(user.name)").storyUserName()
         }
     }
 }

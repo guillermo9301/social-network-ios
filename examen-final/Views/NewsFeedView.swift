@@ -37,8 +37,9 @@ struct NewsFeedView: View {
                                         image.userPhotoFeed()
                                     }
                                 })
+                                
                                 //interactions
-                                HStack {
+                                HStack (spacing: 10){
                                     Image(systemName: "heart").smallIcon()
                                     Image(systemName: "message").smallIcon()
                                     Image(systemName: "paperplane").smallIcon()
@@ -47,10 +48,22 @@ struct NewsFeedView: View {
                                 }.padding(.leading, 8).padding(.trailing, 8)
                                 
                                 //descriptions
-                                VStack {
-                                    Text("\(userData.description_line_1 ?? "")").descriptionText()
-                                    Text("\(userData.description_line_2 ?? "")").descriptionText()
-                                }
+                                HStack {
+                                    VStack (alignment: .leading){
+                                        Text("\(userData.description_line_1 ?? "")").descriptionText()
+                                        Text("\(userData.description_line_2 ?? "")").descriptionText()
+                                    }
+                                    Spacer()
+                                }.padding(.leading, 8).padding(.trailing, 8)
+                                
+                                //comments
+                                HStack {
+                                    URLImage(URL(string: userData.userPhoto)!) { image in
+                                        image.userPhotoMini()
+                                    }
+                                    Text("Agrega un comentario...").commentHelperText()
+                                    Spacer()
+                                }.padding(.leading, 8).padding(.trailing, 8).padding(.bottom, 15)
                             }
                         }.padding(.top, 10)
                         .padding(.bottom, 10)

@@ -31,7 +31,6 @@ extension Text {
     
     func descriptionText() -> some View {
         self.font(.system(size: 14, weight: .regular))
-            .frame(width: .infinity)
     }
 }
 
@@ -59,7 +58,7 @@ extension Image {
     func storyThumbnail() -> some View {
         self.resizable()
             .scaledToFill()
-            .frame(width: 60, height: 60)
+            .frame(width: 70, height: 70)
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             .overlay(Circle().stroke(LinearGradient(gradient: storyStrokeGradient, startPoint: .bottomLeading, endPoint: .topTrailing), lineWidth: 3))
     }
@@ -71,6 +70,13 @@ extension Image {
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
     }
     
+    func userPhotoMini() -> some View {
+        self.resizable()
+            .scaledToFill()
+            .frame(width: 25, height: 25)
+            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+    }
+    
     func userPhotoFeed() -> some View {
         self.resizable()
             .aspectRatio(contentMode: .fill)
@@ -78,3 +84,5 @@ extension Image {
             .clipped()
     }
 }
+
+
