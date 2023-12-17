@@ -9,10 +9,7 @@ import SwiftUI
 import URLImage
 
 struct NewsFeedView: View {
-    
     @Binding var user: [UserData]
-    
-    @State var like = false
     
     var body: some View {
         VStack {
@@ -30,14 +27,9 @@ struct NewsFeedView: View {
                                     Image(systemName: "ellipsis").smallIcon()
                                 }.padding(.leading, 8).padding(.trailing, 8)
                                 
-                                Button(action: {
-                                    //TODO: doubletapLike
-                                }, label: {
-                                    URLImage(URL(string: photo)!) {image in
+                                URLImage(URL(string: photo)!) {image in
                                         image.userPhotoFeed()
                                     }
-                                })
-                                
                                 //interactions
                                 ReactionButtonsView()
                                 

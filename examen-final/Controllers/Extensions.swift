@@ -60,7 +60,10 @@ extension Image {
             .scaledToFill()
             .frame(width: 70, height: 70)
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-            .overlay(Circle().stroke(LinearGradient(gradient: storyStrokeGradient, startPoint: .bottomLeading, endPoint: .topTrailing), lineWidth: 3))
+            .padding(3)
+            .overlay(
+                Circle().stroke(LinearGradient(gradient: storyStrokeGradient, startPoint: .bottomLeading, endPoint: .topTrailing), lineWidth: 3)
+            )
     }
     
     func userPhotoDisplay() -> some View {

@@ -10,10 +10,12 @@ import Foundation
 class NetworkManager {
     static let shared = NetworkManager()
     
+    //API remota, hecha en python con flask
     static let url = "https://guillermo93.pythonanywhere.com/newsfeed"
     
     init() {}
     
+    //metodo para hacer la peticion a la API
     func getUserData(completed: @escaping (Result<[UserData], TYPEerror>) -> Void) {
         guard let url = URL(string: NetworkManager.url)
         else {

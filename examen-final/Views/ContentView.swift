@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var manager = NewsFeedManager()
     @State var filteredUser = [UserData]()
-    @State private var userToSearch: String = ""
+    //@State private var userToSearch: String = ""
     @State var loadFeed = false
     
         var body: some View {
@@ -25,7 +25,7 @@ struct ContentView: View {
                             print(filteredUser)
                             loadFeed.toggle()
                         }, label: {
-                            StoriesView(user: $manager.userInfo[index])
+                            StoriesView(user: manager.userInfo[index])
                         })
                     }
                 }.padding(8)

@@ -7,6 +7,7 @@
 
 import Foundation
 
+//objeto que almacena los datos de cada registro del json
 struct UserData: Decodable, Hashable {
     var id: String
     let name: String

@@ -12,7 +12,7 @@ import SwiftUI
 import URLImage
 
 struct StoriesView: View {
-    @Binding var user: UserData
+    let user: UserData
     
     var body: some View {
         VStack {
