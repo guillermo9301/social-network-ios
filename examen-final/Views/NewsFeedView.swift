@@ -39,13 +39,7 @@ struct NewsFeedView: View {
                                 })
                                 
                                 //interactions
-                                HStack (spacing: 10){
-                                    Image(systemName: "heart").smallIcon()
-                                    Image(systemName: "message").smallIcon()
-                                    Image(systemName: "paperplane").smallIcon()
-                                    Spacer()
-                                    Image(systemName:"bookmark").smallIcon()
-                                }.padding(.leading, 8).padding(.trailing, 8)
+                                ReactionButtonsView()
                                 
                                 //descriptions
                                 HStack {

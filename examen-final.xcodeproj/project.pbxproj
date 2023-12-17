@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3CBC6282B2F530600D26211 /* ReactionButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBC6272B2F530600D26211 /* ReactionButtonsView.swift */; };
 		B3D2E0052B2B71AD009CB8A4 /* examen_finalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D2E0042B2B71AD009CB8A4 /* examen_finalApp.swift */; };
 		B3D2E0072B2B71AD009CB8A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D2E0062B2B71AD009CB8A4 /* ContentView.swift */; };
 		B3D2E0092B2B71AF009CB8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D2E0082B2B71AF009CB8A4 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3CBC6272B2F530600D26211 /* ReactionButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionButtonsView.swift; sourceTree = "<group>"; };
 		B3D2E0012B2B71AD009CB8A4 /* examen-final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "examen-final.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D2E0042B2B71AD009CB8A4 /* examen_finalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examen_finalApp.swift; sourceTree = "<group>"; };
 		B3D2E0062B2B71AD009CB8A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				B3D2E0142B2B7280009CB8A4 /* HeaderView.swift */,
 				B3D2E0192B2B7B27009CB8A4 /* StoriesView.swift */,
 				B3D2E01B2B2B8721009CB8A4 /* NewsFeedView.swift */,
+				B3CBC6272B2F530600D26211 /* ReactionButtonsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				B3D2E0072B2B71AD009CB8A4 /* ContentView.swift in Sources */,
 				B3D2E01A2B2B7B27009CB8A4 /* StoriesView.swift in Sources */,
 				B3D2E01F2B2BA294009CB8A4 /* UserData.swift in Sources */,
+				B3CBC6282B2F530600D26211 /* ReactionButtonsView.swift in Sources */,
 				B3D2E0152B2B7280009CB8A4 /* HeaderView.swift in Sources */,
 				B3D2E0212B2BA359009CB8A4 /* NetworkManager.swift in Sources */,
 				B3D2E01C2B2B8721009CB8A4 /* NewsFeedView.swift in Sources */,
